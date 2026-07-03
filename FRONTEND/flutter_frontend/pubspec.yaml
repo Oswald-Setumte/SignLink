@@ -1,0 +1,52 @@
+name: signlink
+description: Real-time sign language to text translator — SignLink MVP
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Camera
+  camera: ^0.11.0+2
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # State management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # Shared preferences (persist camera permission state)
+  shared_preferences: ^2.3.2
+
+  # Fonts (Google Fonts — Sora, Hanken Grotesk, JetBrains Mono)
+  google_fonts: ^6.2.1
+
+  # HTTP + WebSocket for backend integration
+  http: ^1.2.2
+  web_socket_channel: ^3.0.1
+
+  # Image utils (for sending frames to backend)
+  image: ^4.2.0
+
+  # Animations
+  animated_text_kit: ^4.2.3
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
